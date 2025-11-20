@@ -123,5 +123,5 @@ Navigation also includes a **hamburger menu** for mobile view.
 **Moshek Shaju Jones J**
 HTML • CSS • JavaScript • Bootstrap • Java Developer
 
-**Link below**
+**Check Link**
 (https://hospital-website-using-html-css-jav-delta.vercel.app/index.html)
