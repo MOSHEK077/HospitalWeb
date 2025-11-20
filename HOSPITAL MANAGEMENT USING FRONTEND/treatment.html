@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="st3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialities</title>
+    <!-- Load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <div class="logo-container">
+                <img class="logo" src="NANO HOSPITAL (1).png" alt="Logo">
+            </div>
+            <nav>
+                <input class="hidden" type="checkbox" id="menuToggle">
+                <label class="menu-btn" for="menuToggle">
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                </label>
+                <div class="nav-container">
+                    <ul class="nav-tabs">
+                        <li class="nav-tab"><a href="index.html">Home</a></li>
+                        <li class="nav-tab"><a href="#surgical">Surgical Treatments</a></li>
+                        <li class="nav-tab"><a href="#nonsurgical">Non-Surgical Treatments</a></li>
+                        <li class="nav-tab"><a href="#diga">Diagnostic Care</a></li>
+                        <li class="nav-tab"><a href="#book">Book Appointment</a></li>
+ 
+                       
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="center" id="c"> 
+        <h2>“Treatments We Offer”
+          
+            <p>“From surgeries to preventive health, we care for every stage of your journey.”</p>
+
+
+<!-- The form -->
+  <!-- 🔍 Search Bar -->
+<input id="searchInput" type="text" placeholder="Search treatment..."
+style="border-radius: 20px; border: none; padding: 5px 10px;">
+<button onclick="scrollToContent()" class="btn" type="submit">
+  <i class="fa fa-search"></i>
+</button>
+
+
+
+<div class="box first" id="surgical">
+    <!-- 🔹 Surgical Treatments Section -->
+<h3 style="margin-top:50px; color:#270653;">Surgical Treatments</h3>
+<p style="color:#333;">Our advanced surgical team ensures safety and precision in every procedure.</p>
+
+<div id="resultContainer" style="margin-top: 20px;">
+
+    <div>
+        <h3><i class="fa fa-heartbeat" aria-hidden="true" style="color: rgba(237, 17, 17, 0.885);"></i> Heart Bypass & Angioplasty</h3>
+        <p>Advanced cardiac surgeries performed with utmost precision and care, ensuring every heartbeat counts.</p>
+    </div>
+
+    <div>
+        <h3><i class="fa fa-wheelchair" aria-hidden="true" style="color: rgba(81, 123, 113, 0.885);"></i> Joint Replacement</h3>
+        <p>Pain-free mobility with modern orthopedic care and expert rehabilitation support.</p>
+    </div>
+
+    <div>
+        <h3><i class="fa fa-cut" aria-hidden="true" style="color: rgba(0, 0, 0, 0.885);"></i> Laparoscopic Surgery</h3>
+        <p>Faster recovery through minimal incisions, with advanced technology for better outcomes.</p>
+    </div>
+
+    <div>
+        <h3><i class="fa fa-user-md" aria-hidden="true" style="color: rgba(164, 57, 0, 0.885);"></i> Neurosurgery</h3>
+        <p>Expert surgical care for the brain and spine, combining precision with compassion.</p>
+    </div>
+
+    <div>
+        <h3><i class="fa fa-smile-o" aria-hidden="true" style="color: rgb(35, 92, 90);"></i> Plastic & Reconstructive Surgery</h3>
+        <p>Restoring confidence, one procedure at a time — handled with skill, care, and artistry.</p>
+    </div>
+
+</div>
+
+</div>
+<div class="box  second" id="nonsurgical">
+  
+   <!-- 🔹 Non-Surgical Treatments Section -->
+<h3 style="margin-top:60px; color:#3d0c45;">Non-Surgical Treatments</h3>
+<p style="color:#333;">Healing beyond the operating room — our specialists focus on long-term wellness and personalized care.</p>
+
+<div id="resultContainer" style="margin-top: 20px;">
+
+    <div>
+        <h3><i class="fa fa-hand-paper-o" aria-hidden="true" style="color: rgba(40, 72, 137, 0.885);"></i> Physiotherapy & Rehabilitation</h3>
+        <p>Personalized recovery plans to restore strength, flexibility, and balance after injury or surgery.</p>
+    </div>
+
+    <div>
+        <h3><i class="fa fa-medkit" aria-hidden="true" style="color: rgba(181, 17, 164, 0.997);"></i> Chemotherapy</h3>
+        <p>Compassionate, precise cancer treatment using advanced therapies for better outcomes and comfort.</p>
+    </div>
+
+    <div>
+        <h3><i class="fa fa-tint" aria-hidden="true" style="color: rgba(10, 169, 255, 0.885);"></i> Dialysis</h3>
+        <p>Safe, sterile kidney treatment with constant medical supervision and modern dialysis units.</p>
+    </div>
+
+    <div>
+        <h3><i class="fa fa-heart" aria-hidden="true" style="color: rgba(255, 0, 0, 0.885);"></i> Diabetes & Thyroid Management</h3>
+        <p>Comprehensive monitoring and lifestyle guidance for long-term control and better metabolic health.</p>
+    </div>
+
+    <div>
+        <h3><i class="fa fa-leaf" aria-hidden="true" style="color: rgb(21, 95, 0);"></i> Asthma & Allergy Care</h3>
+        <p>Holistic respiratory care with modern diagnostic tools and personalized treatment programs.</p>
+    </div>
+
+</div>
+
+</div>
+</div>
+
+<div class="box third" id="diga">
+    <!-- 🔹 Diagnostic & Preventive Care Section -->
+<h3 style="margin-top:60px; color:#3d0c45;">Diagnostic & Preventive Care</h3>
+<p style="color:#333;">Modern technology and early detection that empower your health — because prevention is always better than cure.</p>
+
+<div id="resultContainer" style="margin-top: 20px;  padding: 30px 10px; border-radius: 15px;">
+
+    <div>
+        <h3><i class="fa fa-stethoscope" aria-hidden="true" style="color: rgb(75, 69, 69);"></i> MRI & CT Scan</h3>
+        <p>High-resolution imaging for accurate diagnosis, ensuring clarity in every scan and confidence in every report.</p>
+    </div>
+
+    <div>
+        <h3><i class="fa fa-eyedropper" aria-hidden="true" style="color: rgb(13, 103, 131);"></i> Blood Tests</h3>
+        <p>Quick results powered by advanced lab technology for precise health assessments and routine monitoring.</p>
+    </div>
+
+    <div>
+        <h3><i class="fa fa-heartbeat" aria-hidden="true" style="color: rgb(255, 0, 0);"></i> ECG & X-Ray</h3>
+        <p>Comprehensive screening for heart and bone health with fast reporting and expert analysis.</p>
+    </div>
+
+    <div>
+        <h3><i class="fa fa-user-md" aria-hidden="true" style="color: rgb(42, 79, 182);"></i> Full Body Check-up</h3>
+        <p>Catch health issues early and live stronger — our full-body packages include everything from basic screening to detailed diagnostics.</p>
+    </div>
+
+    <div>
+        <h3><i class="fa fa-hospital-o" aria-hidden="true" style="color: rgb(204, 214, 205);"></i> Health Packages</h3>
+        <p>Affordable preventive plans for regular check-ups, ensuring peace of mind and continuous wellness tracking.</p>
+    </div>
+
+</div>
+
+</div>
+<div class="box fourth" id="book">
+
+<div style="margin-top:50px; text-align:center;">
+  <h3 style="color:#3d0c45;">Not sure which treatment fits your need?</h3>
+  <p style="color:#333;">Book a consultation with our specialists and get the right care, right away.</p>
+  <a class="btn2" href="#contact"  >Book Appointment</a>
+</div>
+
+</div>
+<script>
+function scrollToContent() {
+  const word = document.getElementById("searchInput").value.trim().toLowerCase();
+  if (word === "") return;
+
+  const allHeadings = document.querySelectorAll(".box h3");
+  let found = false;
+
+  allHeadings.forEach(h3 => {
+    const text = h3.textContent.toLowerCase();
+
+    // Match by keyword (e.g. “dialysis”, “heart”, etc.)
+    if (text.includes(word)) {
+      found = true;
+      // Smooth scroll into view
+      h3.scrollIntoView({ behavior: "smooth", block: "center" });
+      // Temporary highlight effect
+      h3.style.backgroundColor = "yellow";
+      setTimeout(() => h3.style.backgroundColor = "", 3000);// Time in ms
+    }
+  });
+
+  if (!found) {
+    alert("No matching treatment found 😕");
+  }
+}
+</script>
+
+
+
+</main>
+</body>
+</html>

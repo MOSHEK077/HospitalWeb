@@ -1,0 +1,215 @@
+/* 🌍 Base Setup */
+html, body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: linear-gradient(135deg, #f5a2ef 0%, #c0beb1 100%);
+  color: rgb(15, 27, 10);
+  scroll-behavior: smooth;
+  font-size: 15px;
+}
+
+/* 🔝 Header/Nav */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 65px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.logo {
+  height: 45px;
+  border-radius: 50%;
+}
+
+/* 🌿 Navigation Links */
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-tabs {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
+}
+
+.nav-tab a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 4px 10px;
+  border-radius: 18px;
+  transition: 0.3s;
+}
+
+.nav-tab a:hover {
+  background: rgba(240, 47, 194, 0.1);
+  color: #f02fc2;
+}
+
+/* 🍔 Burger Menu */
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.menu {
+  width: 22px;
+  height: 2px;
+  background-color: #111;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Toggle Button Hidden */
+#menuToggle {
+  display: none;
+}
+
+/* ✅ Mobile Mode */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: flex;
+  }
+
+  .nav-container {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.98);
+    width: 100%;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    padding: 10px 0;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 15px 15px;
+  }
+
+  .nav-tabs {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-tab {
+    width: 100%;
+  }
+
+  .nav-tab a {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+
+  .nav-tab a:hover {
+    background: rgba(240, 47, 194, 0.15);
+    color: #a11685;
+  }
+
+  /* ✅ Toggle open */
+  #menuToggle:checked ~ .nav-container {
+    display: flex;
+  }
+
+  /* ✖️ Burger Animation */
+  #menuToggle:checked + .menu-btn .menu:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  #menuToggle:checked + .menu-btn .menu:nth-child(2) {
+    opacity: 0;
+  }
+  #menuToggle:checked + .menu-btn .menu:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+
+/* 🍃 Centered Main Content */
+.center {
+  display: grid;
+  margin-top: 100px;
+  padding: 30px 15px;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* 📦 Treatment Boxes */
+.box {
+  background-color: rgba(202, 151, 189, 0.682);
+  width: 90%;
+  margin: 15px auto;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.553);
+  padding: 15px;
+  text-align: left;
+  font-size: 14px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+/* 🎯 Buttons */
+.btn {
+  border: none;
+  background-color: #955f9e;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.btn:hover {
+  background-color: #7e3d8c;
+  transition: 0.3s;
+}
+
+.btn2 {
+  display: inline-block;
+  background: #6a1b9a;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.btn2:hover {
+  background-color: rgb(179, 86, 232);
+  transition: 0.5s;
+  color: #000;
+}
